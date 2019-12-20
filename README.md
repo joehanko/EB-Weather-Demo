@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # EB-Weather-App
 An Elastic Beanstalk demo, deploying a simple Express weather application.
 
@@ -294,3 +295,7 @@ var server = app.listen(8081, function () {
   console.log("App listening on port", port);
 });
 ```
+=======
+# EB-Weather-Demo
+An Elastic Beanstalk demo, deploying a simple Express weather application.
+>>>>>>> aaaa880fd4007812005d2765ab3e9881284b17b2
