@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>My Field Weather Application</title>
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+<link href="https://fonts.googleapis.com/css?family=Noto+Sans&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="container">
+    <div class="row" style="margin-top: 5vh;">
+
+    <h1 class="header">&#8251; SciCorp</h1>
+    <h2 class="subtitle">Field Temperature Tool</h2>
+    <h2 class="description" >This temperature tool is used for super-precise measurement at specific coordinates.</h2>
+        <fieldset>
+            <form action="/" method="post">
+                <!-- <input name="city" type="text" class="ghost-input" placeholder="Enter a City" required> -->
+                <label>Latitude:
+                    <input name="lat" type="text" class="ghost-input" placeholder="40.712776" required>
+                </label>
+                <label>Longitude:
+                    <input name="lon" type="text" class="ghost-input" placeholder="-74.005974" required>
+                    <input type="submit" class="ghost-button" value="Get Temperature Data">
+                </label>
+            </form>
+
+            <% if(weather !== null){ %>
+            <p><%= weather %></p>
+            <% } %>
+
+            <% if(error !== null){ %>
+            <p><%= error %></p>
+            <% } %>
+        </fieldset>
+     </div>
+ </div>
+</body>
+
+
+</html>
