@@ -7,6 +7,8 @@ const app = express();
 // NOTE: You'll need to wait approximately 20-30 mins for the API key to be activated, so hold tight!
 const apiKey = " YOURAPIKEY ";  
 
+app.set('port', (process.env.PORT || 8081));
+
 app.use(express.static("public"));
 app.use(bodyParser.urlencoded({
   var port = normalizePort(process.env.PORT || '3000');
@@ -43,7 +45,7 @@ app.post("/", function(req, res) {
   });
 });
 
-var server = app.listen(3000, function () {
-     var port = server.address().port
+var server = app.listen(8081, function () {
+  var port = server.address().port
   console.log("App listening on port", port);
 });
