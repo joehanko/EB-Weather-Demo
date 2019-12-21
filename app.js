@@ -7,8 +7,6 @@ const app = express();
 // NOTE: You'll need to wait approximately 20-30 mins for the API key to be activated, so hold tight!
 const apiKey = " YOURAPIKEY ";  
 
-app.set('port', (process.env.PORT || 3000));
-
 app.use(express.static("public"));
 app.use(bodyParser.urlencoded({ extended: true }));
 app.set("view engine", "ejs");
