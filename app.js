@@ -5,14 +5,13 @@ const app = express();
 
 // An API Key is required - you can get this from https://openweathermap.org
 // NOTE: You'll need to wait approximately 20-30 mins for the API key to be activated, so hold tight!
-const apiKey = " YOURAPIKEY ";  
+const apiKey = " YOURAPIKEY ";
 
 app.set('port', (process.env.PORT || 8081));
 
 app.use(express.static("public"));
 app.use(bodyParser.urlencoded({
-  var port = normalizePort(process.env.PORT || '3000');
-  app.set('port', port);extended: true
+  extended: true
 }));
 app.set("view engine", "ejs");
 
