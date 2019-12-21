@@ -8,7 +8,10 @@ const app = express();
 const apiKey = " YOURAPIKEY ";  
 
 app.use(express.static("public"));
-app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.urlencoded({
+  var port = normalizePort(process.env.PORT || '3000');
+  app.set('port', port);extended: true
+}));
 app.set("view engine", "ejs");
 
 app.get("/", function(req, res) {
