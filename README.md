@@ -25,8 +25,8 @@ $ eb init
 ```
 You have not yet set up your credentials or your credentials are incorrect.
 You must provide your credentials.
-(aws-access-id): AKIAJOUAASEXAMPLE
-(aws-secret-key): 5ZRIrtTM4ciIAvd4EXAMPLEDtm+PiPSzpoK
+(aws-access-id): OMJAOUAUAAEXAMPLE
+(aws-secret-key): 6ZAIitLm4cCKAvd3EXAMPLEDtk+IosMzlpM
 ```
 5. Complete the EB application setup by following the prompts.
 
